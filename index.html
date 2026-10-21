@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مراجعة الوحدة الأولى – ICT 2nd Prep</title>
+<style>
+:root{--bg:#eef4ff;--card:#fff;--tx:#14213d;--mu:#5b6b8c;--pr:#3b5bdb;--ok:#2f9e44;--okb:#d3f9d8;--no:#e03131;--nob:#ffe3e3;--bd:#d0dbf5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1730;--card:#1a2547;--tx:#eef2ff;--mu:#a5b4d8;--pr:#748ffc;--ok:#69db7c;--okb:#173a24;--no:#ff8787;--nob:#47191c;--bd:#2d3b6b}}
+:root[data-theme="dark"]{--bg:#0f1730;--card:#1a2547;--tx:#eef2ff;--mu:#a5b4d8;--pr:#748ffc;--ok:#69db7c;--okb:#173a24;--no:#ff8787;--nob:#47191c;--bd:#2d3b6b}
+html,body{margin:0}body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',Tahoma,Arial,sans-serif;font-size:18px;line-height:1.6;min-height:100vh}
+.w{max-width:820px;margin:auto;padding:14px}
+h1{text-align:center;font-size:24px;margin:8px 0 2px}.sub{text-align:center;color:var(--mu);margin-bottom:12px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:12px}
+.tabs button{flex:1 1 150px;border:2px solid var(--bd);background:var(--card);color:var(--tx);border-radius:14px;padding:8px;font-size:15px;cursor:pointer;font-weight:700}
+.tabs button.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:16px;margin-bottom:12px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.en{direction:ltr;text-align:left;font-weight:700}.ar{direction:rtl;text-align:right;color:var(--mu);font-size:.95em}
+.sm{margin:8px 0;padding-bottom:8px;border-bottom:1px dashed var(--bd)}.sm:last-child{border:0}
+.btn{display:block;width:100%;border:0;background:var(--pr);color:#fff;border-radius:14px;padding:12px;font-size:19px;font-weight:700;cursor:pointer;margin-top:8px}
+.opt{display:block;width:100%;background:var(--card);color:var(--tx);border:2px solid var(--bd);border-radius:14px;padding:10px 12px;margin:8px 0;cursor:pointer;font-size:17px}
+.opt:hover:not(:disabled){border-color:var(--pr)}.opt b{color:var(--pr)}
+.opt.ok{background:var(--okb);border-color:var(--ok)}.opt.no{background:var(--nob);border-color:var(--no)}
+.bar{height:10px;background:var(--bd);border-radius:9px;overflow:hidden;margin:6px 0 12px}.bar i{display:block;height:100%;background:var(--pr);transition:width .3s}
+.fb{font-size:20px;font-weight:800;text-align:center;margin:8px 0}.shake{animation:sh .4s}.pop{animation:pp .4s}
+@keyframes sh{20%,60%{transform:translateX(-10px)}40%,80%{transform:translateX(10px)}}@keyframes pp{50%{transform:scale(1.04)}}
+.fl{position:fixed;inset:0;pointer-events:none;opacity:0;z-index:5}.fl.g{background:rgba(47,158,68,.25)}.fl.r{background:rgba(224,49,49,.28)}.fl.s{animation:fl .5s}@keyframes fl{0%{opacity:1}100%{opacity:0}}
+.cf{position:fixed;top:-30px;font-size:26px;pointer-events:none;z-index:6;animation:fall 1.6s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.big{text-align:center;font-size:64px}.row{display:flex;gap:8px}.row .btn{margin-top:8px}
+</style></head><body><div class="w">
+<h1>🤖 Unit 1 Review · مراجعة الوحدة الأولى</h1>
+<div class="sub">Artificial Intelligence and Protecting Our Digital Data<br>الذكاء الاصطناعي وحماية بياناتنا الرقمية · 2nd Prep</div>
+<div class="tabs" id="tabs"></div><div id="main"></div></div>
+<div class="fl" id="fl"></div>
+<script>
+var W={IoT:'إنترنت الأشياء',AI:'الذكاء الاصطناعي',Robotics:'الروبوتات',VR:'الواقع الافتراضي',AR:'الواقع المعزز',GPS:'نظام تحديد المواقع',True:'صح',False:'خطأ',structured:'هيكلية',unstructured:'غير هيكلية','semi-structured':'شبه هيكلية',none:'لا شيء'};
+function M(e,a,o,c){return{e:e,a:a,o:o,c:c}}
+function T(e,a,v){return{e:e,a:a,o:['True','False'],c:v?0:1}}
+var L=[
+{em:'🌍',en:'Lesson 1: Intelligent Systems & Climate Change',ar:'الدرس الأول: الأنظمة الذكية وتأثيرها على التغيرات المناخية',
+sum:[['Interconnected intelligent systems combine IoT, AI and Robotics to communicate, think and act without constant human help.','الأنظمة الذكية المترابطة تجمع بين إنترنت الأشياء والذكاء الاصطناعي والروبوتات لتتواصل وتفكر وتنفذ دون تدخل بشري دائم.'],
+['IoT sends data, AI analyzes it and decides, Robotics carries out the task.','إنترنت الأشياء يرسل البيانات، والذكاء الاصطناعي يحللها ويقرر، والروبوتات تنفذ.'],
+['Applications: smart home, school robot, smart farming, voice assistant, smart car.','التطبيقات: المنزل الذكي، روبوت المدرسة، الزراعة الذكية، المساعد الصوتي، السيارة الذكية.'],
+['Climate problems: global warming, air pollution, drought, floods, melting ice. Smart systems monitor, reduce pollution and protect the planet.','مشكلات المناخ: الاحتباس الحراري، تلوث الهواء، الجفاف، الفيضانات، ذوبان الجليد. والأنظمة الذكية تراقب البيئة وتقلل التلوث وتحمي الكوكب.']],
+q:[M('Which technology connects devices to the internet to exchange data?','أي تقنية تربط الأجهزة بالإنترنت لتبادل البيانات؟',['AI','Robotics','IoT','VR'],2),
+M('What is the main function of artificial intelligence?','ما الوظيفة الرئيسية للذكاء الاصطناعي؟',['Data transfer only|نقل البيانات فقط','Device manufacturing|تصنيع الأجهزة','Data analysis and decision making|تحليل البيانات واتخاذ القرارات','Powering the internet|تشغيل الإنترنت'],2),
+M('What are systems that combine IoT, AI and robotics called?','ما اسم الأنظمة التي تجمع بين IoT وAI والروبوتات؟',['Traditional systems|الأنظمة التقليدية','Interconnected intelligent systems|الأنظمة الذكية المترابطة','Manual systems|الأنظمة اليدوية','Mechanical systems|الأنظمة الميكانيكية'],1),
+M('In a smart car, road hazards are analyzed by …','في السيارة الذكية، يتم تحليل مخاطر الطريق بواسطة …',['IoT','Robotics','AI','Cloud computing|الحوسبة السحابية'],2),
+M('In smart farming, … measures the soil moisture.','في الزراعة الذكية، … يقيس رطوبة التربة.',['AI','Robotics','VR','IoT'],3),
+M('Which technology waters the land automatically when needed?','أي تقنية تروي الأرض تلقائيًا عند الحاجة؟',['Robotics','AI','IoT','AR'],0),
+T('Global warming is caused by a decrease in carbon dioxide emissions.','الاحتباس الحراري سببه انخفاض انبعاثات ثاني أكسيد الكربون.',0),
+T('A voice assistant uses robotics because it moves around.','المساعد الصوتي يستخدم الروبوتات لأنه يتحرك.',0),
+T('In a smart home, AI can turn on the air conditioner before you arrive.','في المنزل الذكي، يمكن للذكاء الاصطناعي تشغيل المكيف قبل وصولك.',1),
+M('Which technology sends warnings before floods and suggests rescue routes?','أي تقنية ترسل تحذيرات قبل الفيضانات وتقترح طرق الإنقاذ؟',['IoT','AI','Robotics','GPS'],1),
+M('Which gas mainly causes global warming?','أي غاز هو السبب الرئيسي للاحتباس الحراري؟',['Carbon dioxide|ثاني أكسيد الكربون','Oxygen|الأكسجين','Water vapor|بخار الماء','Nitrogen|النيتروجين'],0),
+T('Intelligent systems can’t help us fight the melting ice at the Poles.','الأنظمة الذكية لا يمكنها مساعدتنا في مواجهة ذوبان الجليد في القطبين.',0),
+M('When a smart car breaks down, what does IoT do?','عند تعطل السيارة الذكية، ماذا يفعل IoT؟',['Repairs the engine|يصلح المحرك','Stops all systems|يوقف كل الأنظمة','Ignores the fault|يتجاهل العطل','Sends a message with the location to the maintenance center|يرسل رسالة بالموقع إلى مركز الصيانة'],3),
+M('What is a downside of self-driving cars?','ما أحد سلبيات السيارات ذاتية القيادة؟',['They save energy|توفر الطاقة','Total reliance on AI may cause errors if the system fails|الاعتماد الكامل على الذكاء الاصطناعي قد يسبب أخطاء عند فشل النظام','They improve road safety|تحسن سلامة الطرق','They reduce accidents|تقلل الحوادث'],1),
+T('Robots can help drain water or rescue people during floods.','يمكن للروبوتات المساعدة في تصريف المياه أو إنقاذ الأشخاص أثناء الفيضانات.',1)]},
+{em:'🛡️',en:'Lesson 2: Advanced Cyber Threats',ar:'الدرس الثاني: التهديدات السيبرانية المتقدمة',
+sum:[['Advanced cyber threats are carefully planned attacks that exploit weaknesses in systems, devices and user behavior.','التهديدات السيبرانية المتقدمة هجمات مخططة بعناية تستغل نقاط الضعف في الأنظمة والأجهزة وسلوك المستخدمين.'],
+['Ransomware: malware that encrypts your files, locks your devices and demands money. It spreads by suspicious emails, malicious links and untrusted software.','برامج الفدية: برمجيات خبيثة تشفر ملفاتك وتقفل أجهزتك وتطلب مالًا. تنتشر عبر رسائل مشبوهة وروابط ضارة وبرامج غير موثوقة.'],
+['Social engineering is a hack of minds: Spear phishing (targets specific people), Pretexting (fake story), Baiting (attractive bait like a free USB).','الهندسة الاجتماعية اختراق للعقول: التصيد الموجه (يستهدف أشخاصًا محددين)، انتحال الشخصية (قصة وهمية)، الاستدراج (شيء جذاب مثل USB مجاني).'],
+['DDoS: botnets (hacked devices) flood a website with requests so real users can’t reach it.','هجمات DDoS: الشبكات الروبوتية (أجهزة مخترقة) تغرق الموقع بالطلبات فلا يصل إليه المستخدمون الشرعيون.']],
+q:[M('Ransomware is a type of …','برامج الفدية نوع من …',['hardware|العتاد','malware|البرمجيات الخبيثة','good software|برنامج جيد','password|كلمة مرور'],1),
+M('Ransomware demands … to unlock files.','برامج الفدية تطلب … لفك الملفات.',['passwords|كلمات مرور','updates|تحديثات','software|برامج','money|مالًا'],3),
+M('What is the main goal of a DDoS attack?','ما الهدف الأساسي لهجمات DDoS؟',['Stealing users’ data|سرقة بيانات المستخدمين','Disabling a website or online service|تعطيل موقع أو خدمة عبر الإنترنت','Spreading false information|نشر معلومات كاذبة','Spying on communications|التجسس على الاتصالات'],1),
+M('… is considered a hack of minds rather than software.','… يُعتبر اختراقًا للعقول وليس للبرامج.',['DDoS attack|هجوم DDoS','Ransomware|برامج الفدية','Social engineering|الهندسة الاجتماعية','None of them|لا شيء مما سبق'],2),
+M('A free USB drive that contains malware is an example of …','قرص USB مجاني يحتوي على برمجيات ضارة مثال على …',['Pretexting|انتحال الشخصية','Baiting|الاستدراج','Spear phishing|التصيد الموجه','Ransomware|برامج الفدية'],1),
+M('What are the botnets used in DDoS attacks?','ما الشبكات الروبوتية (Botnets) المستخدمة في هجمات DDoS؟',['A network of compromised devices controlled remotely|شبكة أجهزة مخترقة يتحكم فيها عن بعد','Superfast computers|أجهزة كمبيوتر فائقة السرعة','Secure servers|خوادم آمنة','Advanced AI programs|برامج ذكاء اصطناعي متطورة'],0),
+M('All are social engineering methods EXCEPT …','كل مما يلي من أساليب الهندسة الاجتماعية ما عدا …',['baiting|الاستدراج','pretexting|انتحال الشخصية','spear phishing|التصيد الموجه','ransomware|برامج الفدية'],3),
+M('In pretexting, the attacker creates …','في انتحال الشخصية، ينشئ المهاجم …',['a fake story or scenario|قصة أو سيناريو وهميًّا','a free gift|هدية مجانية','a strong password|كلمة مرور قوية','an antivirus|برنامج مكافحة فيروسات'],0),
+M('What do “security updates” mean?','ما معنى “التحديثات الأمنية”؟',['Changing the look of the system|تغيير شكل نظام التشغيل','Adding new features|إضافة ميزات جديدة','Fixing security vulnerabilities|إصلاح الثغرات الأمنية','Speeding up apps|تسريع التطبيقات'],2),
+T('Spear phishing targets specific people or organizations.','التصيد الموجه يستهدف أشخاصًا أو مؤسسات محددة.',1),
+T('DDoS attacks target only one device.','هجمات DDoS تستهدف جهازًا واحدًا فقط.',0),
+T('Sharing your personal information with anyone you trust online is always safe.','مشاركة معلوماتك الشخصية مع أي شخص تثق به عبر الإنترنت آمنة دائمًا.',0),
+T('Updating antivirus software helps prevent ransomware.','تحديث برنامج مكافحة الفيروسات يساعد في الوقاية من برامج الفدية.',1),
+T('Social engineering relies on exploiting vulnerabilities in technical systems.','الهندسة الاجتماعية تعتمد على استغلال الثغرات في الأنظمة التقنية.',0),
+M('Ransomware can spread by all of these EXCEPT …','تنتشر برامج الفدية بكل مما يلي ما عدا …',['malicious links|روابط ضارة','safe websites|مواقع آمنة','suspicious emails|رسائل بريد مشبوهة','untrusted software|برامج غير موثوقة'],1)]},
+{em:'📊',en:'Lesson 3: Big Data',ar:'الدرس الثالث: البيانات الضخمة',
+sum:[['Big data is a collection of large, complex data that traditional tools such as Excel can’t process efficiently.','البيانات الضخمة مجموعة بيانات كبيرة ومعقدة لا يمكن معالجتها بكفاءة بالأدوات التقليدية مثل Excel.'],
+['Sources: IoT devices, social media, financial data, smart devices, digital content, government data, geographic and spatial data.','المصادر: الأجهزة المتصلة بالإنترنت، وسائل التواصل، البيانات المالية، الأجهزة الذكية، المحتوى الرقمي، البيانات الحكومية، البيانات الجغرافية والمكانية.'],
+['The 5Vs: Volume (size), Velocity (speed), Variety (types), Veracity (reliability), Value (usefulness).','الخصائص الخمس: الحجم، السرعة، التنوع، الصحة (الموثوقية)، القيمة.'],
+['Types: Structured (tables), Unstructured (text, images, videos), Semi-structured (like emails).','الأنواع: هيكلية (جداول)، غير هيكلية (نصوص وصور وفيديو)، شبه هيكلية (مثل البريد الإلكتروني).']],
+q:[M('Big data cannot be processed efficiently using …','لا يمكن معالجة البيانات الضخمة بكفاءة باستخدام …',['Hadoop','SQL','Excel','none of them'],2),
+M('A smart watch measuring heart rate is an example of data from …','ساعة ذكية تقيس ضربات القلب مثال على بيانات من …',['IoT devices|أجهزة إنترنت الأشياء','social media|وسائل التواصل الاجتماعي','financial systems|الأنظمة المالية','GPS'],0),
+M('“Value” in big data means the …','“القيمة” في البيانات الضخمة تعني …',['size|الحجم','speed|السرعة','usefulness|الفائدة','variety|التنوع'],2),
+M('Electronic payments and stock trading are sources of …','المدفوعات الإلكترونية وتداول الأسهم مصادر …',['GPS data|بيانات GPS','financial data|بيانات مالية','digital content|محتوى رقمي','device data|بيانات الأجهزة'],1),
+M('… refers to the reliability and quality of data.','… يشير إلى موثوقية البيانات وجودتها.',['Velocity|السرعة','Variety|التنوع','Value|القيمة','Veracity|الصحة'],3),
+M('A population census is an example of …','التعداد السكاني مثال على …',['social media|وسائل التواصل','governmental data|بيانات حكومية','GPS','financial data|بيانات مالية'],1),
+M('Data organized in tables is an example of …','البيانات المنظمة في جداول مثال على …',['structured data|بيانات هيكلية','unstructured data|بيانات غير هيكلية','semi-structured data|بيانات شبه هيكلية','random data|بيانات عشوائية'],0),
+M('Which “V” refers to the speed of data?','أي حرف V يشير إلى سرعة البيانات؟',['Variety|التنوع','Velocity|السرعة','Volume|الحجم','Value|القيمة'],1),
+M('A Facebook post with text, images and videos is …','منشور فيسبوك يحتوي على نص وصور وفيديو هو …',['structured data|بيانات هيكلية','semi-structured data|بيانات شبه هيكلية','unstructured data|بيانات غير هيكلية','none of them|لا شيء مما سبق'],2),
+M('Email data is an example of … data.','بيانات البريد الإلكتروني مثال على بيانات …',['structured|هيكلية','semi-structured|شبه هيكلية','unstructured|غير هيكلية','none of them|لا شيء مما سبق'],1),
+M('Which “V” refers to the massive amount of data?','أي حرف V يشير إلى الكمية الهائلة من البيانات؟',['Velocity|السرعة','Variety|التنوع','Value|القيمة','Volume|الحجم'],3),
+T('Big data can be easily processed using Excel.','يمكن معالجة البيانات الضخمة بسهولة باستخدام Excel.',0),
+T('The speed of data generation is not a characteristic of big data.','سرعة توليد البيانات ليست من خصائص البيانات الضخمة.',0),
+T('Google Maps collects data about traffic and vehicle speed (geographic data).','تطبيق Google Maps يجمع بيانات عن حركة المرور وسرعة المركبات (بيانات جغرافية).',1),
+T('Videos, images and audio content online do not generate big data.','الفيديوهات والصور والمحتوى الصوتي عبر الإنترنت لا تولد بيانات ضخمة.',0)]},
+{em:'🧠',en:'Lesson 4: Big Data and Its Relationship to AI',ar:'الدرس الرابع: البيانات الضخمة وعلاقتها بالذكاء الاصطناعي',
+sum:[['AI needs big data to work and learn, and AI helps process and analyze big data to extract value.','الذكاء الاصطناعي يحتاج إلى البيانات الضخمة ليعمل ويتعلم، ويساعد في معالجتها وتحليلها واستخلاص القيمة منها.'],
+['Stages: 1 Collection → 2 Storage → 3 Cleaning → 4 Analysis → 5 Information extraction.','المراحل: ١ جمع ← ٢ تخزين ← ٣ تنظيف ← ٤ تحليل ← ٥ استخراج المعلومات.'],
+['Uses: AI, machine learning, network monitoring and cybersecurity, e-commerce.','الاستخدامات: الذكاء الاصطناعي، التعلم الآلي، مراقبة الشبكات والأمن السيبراني، التجارة الإلكترونية.'],
+['Role in AI: improves accuracy, NLP, computer vision, predictive analytics, hidden patterns, continuous learning, automation. Big data is the raw material that feeds AI.','دوره في الذكاء الاصطناعي: تحسين الدقة، معالجة اللغة، الرؤية الحاسوبية، التحليلات التنبؤية، اكتشاف الأنماط الخفية، التعلم المستمر، أتمتة المهام. والبيانات الضخمة هي المادة الخام التي تغذي الذكاء الاصطناعي.']],
+q:[M('Data … is the first stage of big data processing.','… البيانات هو أول مرحلة في معالجة البيانات الضخمة.',['storage|تخزين','collection|جمع','cleaning|تنظيف','analysis|تحليل'],1),
+M('Which creates algorithms that mimic human intelligence?','أيٌّ مما يلي ينشئ خوارزميات تحاكي الذكاء البشري؟',['AI|الذكاء الاصطناعي','Physics|الفيزياء','Biology|الأحياء','History|التاريخ'],0),
+M('Removing errors and duplication is called data …','إزالة الأخطاء والتكرار تسمى … البيانات.',['storage|تخزين','analysis|تحليل','cleaning|تنظيف','extraction|استخراج'],2),
+M('In big data processing, … comes next after data analysis.','في معالجة البيانات الضخمة، يأتي … بعد تحليل البيانات.',['data collection|جمع البيانات','data cleaning|تنظيف البيانات','information extraction|استخراج المعلومات','data storage|تخزين البيانات'],2),
+M('Big data storage usually happens in …','يتم تخزين البيانات الضخمة غالبًا في …',['clouds|أنظمة سحابية','servers|خوادم','USB|فلاشة USB','a or b|أ أو ب'],3),
+M('Predicting future weather using big data is an example of …','التنبؤ بحالة الطقس باستخدام البيانات الضخمة مثال على …',['cybersecurity|الأمن السيبراني','machine learning|التعلم الآلي','NLP|معالجة اللغة الطبيعية','cleaning|التنظيف'],1),
+M('Predicting customer behavior with AI is called …','التنبؤ بسلوك العملاء بالذكاء الاصطناعي يسمى …',['cleaning|التنظيف','extraction|الاستخراج','predictive analytics|التحليلات التنبؤية','storage|التخزين'],2),
+M('Which best describes the relationship between big data and AI?','أي عبارة تصف العلاقة بين البيانات الضخمة والذكاء الاصطناعي؟',['AI creates raw data|الذكاء الاصطناعي ينتج البيانات الخام','Big data depends on AI fully|البيانات الضخمة تعتمد على AI بالكامل','Big data feeds AI, and AI extracts value|البيانات الضخمة تغذي AI، وAI يستخلص القيمة','They are unrelated|لا علاقة بينهما'],2),
+M('Big data improves AI by reducing …','البيانات الضخمة تحسن الذكاء الاصطناعي بتقليل …',['cost|التكلفة','collection|الجمع','storage|التخزين','overfitting|مشكلة فرط التخصيص'],3),
+M('NLP applications require processing …','تطبيقات معالجة اللغة تتطلب معالجة …',['images|صور','text datasets|مجموعات نصوص','maps|خرائط','audio only|صوت فقط'],1),
+T('Big data has no role in the development of artificial intelligence.','ليس للبيانات الضخمة دور في تطوير الذكاء الاصطناعي.',0),
+T('Information extraction takes place before data analysis.','استخراج المعلومات يتم قبل تحليل البيانات.',0),
+T('Computer vision does not require massive datasets of images and videos.','الرؤية الحاسوبية لا تحتاج إلى مجموعات ضخمة من الصور والفيديوهات.',0),
+T('Big data is the raw material that feeds artificial intelligence.','البيانات الضخمة هي المادة الخام التي تغذي الذكاء الاصطناعي.',1),
+T('One of the stages of big data processing is data cleaning.','من مراحل معالجة البيانات الضخمة تنظيف البيانات.',1)]}];
+var ac,cur=0,qi=0,sc=0,best=[0,0,0,0],lock=false;
+function tone(f,t,ty,d){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();var o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.value=f;g.gain.value=.15;o.connect(g);g.connect(ac.destination);var s=ac.currentTime+d;o.start(s);g.gain.exponentialRampToValueAtTime(.001,s+t);o.stop(s+t)}catch(e){}}
+function good(){[523,659,784,1046].forEach(function(f,i){tone(f,.18,'sine',i*.1)})}
+function bad(){tone(220,.25,'sawtooth',0);tone(150,.35,'sawtooth',.2)}
+function flash(c){var f=document.getElementById('fl');f.className='fl '+c;void f.offsetWidth;f.className='fl '+c+' s'}
+function confetti(){var e=['🎉','⭐','🌟','✨','🎊'];for(var i=0;i<26;i++){var s=document.createElement('span');s.className='cf';s.textContent=e[i%5];s.style.left=Math.random()*100+'vw';s.style.animationDelay=Math.random()*.4+'s';document.body.appendChild(s);setTimeout(function(x){x.remove()},2200,s)}}
+function op(x){var p=x.split('|');return[p[0],p[1]||W[p[0]]||'']}
+function B(e,a){return'<div class="en">'+e+'</div><div class="ar">'+a+'</div>'}
+function tabs(){var h='';L.forEach(function(l,i){h+='<button class="'+(i==cur?'on':'')+'" onclick="go('+i+')">'+l.em+' L'+(i+1)+(best[i]?' ✓ '+best[i]+'/15':'')+'</button>'});document.getElementById('tabs').innerHTML=h}
+function go(i){cur=i;qi=0;sc=0;tabs();lesson()}
+function lesson(){var l=L[cur],h='<div class="card"><div class="big">'+l.em+'</div>'+B(l.en,l.ar)+'</div><div class="card">';l.sum.forEach(function(s){h+='<div class="sm">'+B('📌 '+s[0],s[1])+'</div>'});h+='</div><button class="btn" onclick="startQ()">🎯 Start the quiz · ابدأ الاختبار (15)</button>';document.getElementById('main').innerHTML=h;window.scrollTo(0,0)}
+function startQ(){qi=0;sc=0;ques()}
+function ques(){var l=L[cur],q=l.q[qi],h='<div class="bar"><i style="width:'+(qi/15*100)+'%"></i></div><div class="card" id="qc">'+B('Q'+(qi+1)+'/15 · '+q.e,q.a);q.o.forEach(function(x,i){var p=op(x);h+='<button class="opt" onclick="pick('+i+')"><b>'+'abcd'[i]+')</b> '+B(p[0],p[1])+'</button>'});h+='<div id="fb"></div></div>';document.getElementById('main').innerHTML=h;lock=false}
+function pick(i){if(lock)return;lock=true;var q=L[cur].q[qi],bs=document.querySelectorAll('.opt'),qc=document.getElementById('qc'),ok=i==q.c;bs.forEach(function(b){b.disabled=true});bs[q.c].classList.add('ok');var fb='';
+if(ok){sc++;good();flash('g');confetti();qc.classList.add('pop');fb='<div class="fb" style="color:var(--ok)">🎉 Correct! Great job · إجابة صحيحة! أحسنت</div>'}
+else{bs[i].classList.add('no');bad();flash('r');qc.classList.add('shake');fb='<div class="fb" style="color:var(--no)">😢 Wrong · إجابة خاطئة. Correct: <b>'+'abcd'[q.c]+'</b> ✔</div>'}
+fb+='<button class="btn" onclick="nxt()">'+(qi<14?'Next · التالي ➜':'Result · النتيجة 🏆')+'</button>';document.getElementById('fb').innerHTML=fb}
+function nxt(){qi++;if(qi<15)ques();else done()}
+function done(){if(sc>best[cur])best[cur]=sc;tabs();var st=sc>=13?'⭐⭐⭐':sc>=9?'⭐⭐':sc>=5?'⭐':'💪',m=sc>=13?'Excellent! · ممتاز!':sc>=9?'Very good! · جيد جدًا!':'Keep practicing! · واصل التدريب!';if(sc>=9){good();confetti()}
+document.getElementById('main').innerHTML='<div class="card"><div class="big">'+st+'</div><div class="fb">'+sc+' / 15</div>'+B(m,'')+'</div><div class="row"><button class="btn" onclick="startQ()">🔁 Retry · أعد المحاولة</button>'+(cur<3?'<button class="btn" onclick="go('+(cur+1)+')">Next lesson · الدرس التالي ➜</button>':'')+'</div><button class="btn" style="background:var(--mu)" onclick="lesson()">📖 Review lesson · راجع الدرس</button>'}
+tabs();lesson();
+</script></body></html>
